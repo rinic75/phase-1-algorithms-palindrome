@@ -1,9 +1,20 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  let newWord = ''
+  for(i = word.length -1; i>=0; i--) {
+    newWord += word[i];
+  }
+  if(word === newWord) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 /* 
-  Add your pseudocode here
+  make word reverse using loop
+  compare original and reversed
+  return trun or false
 */
 
 /*
